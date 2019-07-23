@@ -6,18 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/7 | Youngton的blog</title>
+  <title>环境搭建篇：基于Windows的hexo的搭建及常见问题 | Youngton的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一位半路杀出的CPP码农">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Youngton的blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/07/index.html">
+  <meta name="description" content="一、hexo的介绍Hexo是一款基于node.js的快速、简单都博客框架（静态网站生成器），能够创建一个项目并进行编辑后便可以生成一套静态网页，效率非常高，由于Hexo生成都网页不依赖数据库和任何Web工具，因此可以将其放在GitHub上（免费且配置简单），因此非常适合个人博客的搭建。  **注：** Hexo页面的编辑改动，是采用一中**YAML** 编写的文件格式，其文件后缀为**.yml *">
+<meta name="keywords" content="hexo Windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="环境搭建篇：基于Windows的hexo的搭建及常见问题">
+<meta property="og:url" content="http://yoursite.com/2019/07/23/环境搭建篇：基于Windows的hexo的搭建及常见问题/index.html">
 <meta property="og:site_name" content="Youngton的blog">
-<meta property="og:description" content="一位半路杀出的CPP码农">
+<meta property="og:description" content="一、hexo的介绍Hexo是一款基于node.js的快速、简单都博客框架（静态网站生成器），能够创建一个项目并进行编辑后便可以生成一套静态网页，效率非常高，由于Hexo生成都网页不依赖数据库和任何Web工具，因此可以将其放在GitHub上（免费且配置简单），因此非常适合个人博客的搭建。  **注：** Hexo页面的编辑改动，是采用一中**YAML** 编写的文件格式，其文件后缀为**.yml *">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="c:%5CUsers%5Chp%5CAppData%5CLocal%5CTemp%5C1563859021323.png">
+<meta property="og:updated_time" content="2019-07-23T07:20:14.239Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Youngton的blog">
-<meta name="twitter:description" content="一位半路杀出的CPP码农">
+<meta name="twitter:title" content="环境搭建篇：基于Windows的hexo的搭建及常见问题">
+<meta name="twitter:description" content="一、hexo的介绍Hexo是一款基于node.js的快速、简单都博客框架（静态网站生成器），能够创建一个项目并进行编辑后便可以生成一套静态网页，效率非常高，由于Hexo生成都网页不依赖数据库和任何Web工具，因此可以将其放在GitHub上（免费且配置简单），因此非常适合个人博客的搭建。  **注：** Hexo页面的编辑改动，是采用一中**YAML** 编写的文件格式，其文件后缀为**.yml *">
+<meta name="twitter:image" content="c:%5CUsers%5Chp%5CAppData%5CLocal%5CTemp%5C1563859021323.png">
   
     <link rel="alternative" href="/atom.xml" title="Youngton的blog" type="application/atom+xml">
   
@@ -153,36 +157,92 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-环境搭建篇：基于Windows的hexo的搭建及常见问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/23/环境搭建篇：基于Windows的hexo的搭建及常见问题/" class="archive-article-date">
-  	<time datetime="2019-07-23T01:32:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-23</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/23/环境搭建篇：基于Windows的hexo的搭建及常见问题/">环境搭建篇：基于Windows的hexo的搭建及常见问题</a>
+    <h1 class="article-title" itemprop="name">
+      环境搭建篇：基于Windows的hexo的搭建及常见问题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/07/23/环境搭建篇：基于Windows的hexo的搭建及常见问题/" class="archive-article-date">
+  	<time datetime="2019-07-23T01:32:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、hexo的介绍"><a href="#一、hexo的介绍" class="headerlink" title="一、hexo的介绍"></a>一、hexo的介绍</h2><pre><code>Hexo是一款基于node.js的快速、简单都博客框架（静态网站生成器），能够创建一个项目并进行编辑后便可以生成一套静态网页，效率非常高，由于Hexo生成都网页不依赖数据库和任何Web工具，因此可以将其放在GitHub上（免费且配置简单），因此非常适合个人博客的搭建。
+
+**注：** Hexo页面的编辑改动，是采用一中**YAML** 编写的文件格式，其文件后缀为**.yml **，**YAML**是一种直观的能够被电脑识别都数据序列化格式，而且容易阅读，容易与脚本语言交互。</code></pre><h2 id="二、前期准备工作"><a href="#二、前期准备工作" class="headerlink" title="二、前期准备工作"></a>二、前期准备工作</h2><h3 id="1、下载-NodeJs-环境包"><a href="#1、下载-NodeJs-环境包" class="headerlink" title="1、下载 NodeJs 环境包"></a>1、下载 NodeJs 环境包</h3><pre><code>由于Hexo是基于Node.js都第三方模块，所以搭建Hexo个人博客网站，不能缺少Node.js。下载Node.js可以上[node.js](https://nodejs.org)下载后缀为LTS的安装包，然后无脑安装就是了。</code></pre><h3 id="2、Git工具包"><a href="#2、Git工具包" class="headerlink" title="2、Git工具包"></a>2、Git工具包</h3><pre><code>如果你想要将你的Hexo放在GitHub上，亦或是从GitHub上下载相关资源，那下载一个**Git Bash**必不可少，而且后续搭建博客可能出现的一些问题也需要**Git Bash**来解决，所以赶紧下载[Git](https://git-scm.com/downloads)吧！</code></pre><h2 id="三、开始搭建"><a href="#三、开始搭建" class="headerlink" title="三、开始搭建"></a>三、开始搭建</h2><pre><code>好啦，前期工作都完成啦，我们就可以开始搭建属于我们自己的个人博客啦，有点小激动~</code></pre><h3 id="1、安装-Hexo"><a href="#1、安装-Hexo" class="headerlink" title="1、安装  Hexo"></a>1、安装  Hexo</h3><pre><code>打开 **cmd**，输入下列代码：
+
+<figure class="highlight plain"><figcaption><span>install -g hexo-cli```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line">	**注：**npm的全称是Node Package Manager，是一个Node.js包管理和分发工具，-g 在这里是全局安装的意思。</span><br><span class="line"></span><br><span class="line">### 2、初始化  Hexo</span><br><span class="line"></span><br><span class="line">	这里我建议你独立新建一个文件夹，这样子后期你有什么误操作或者不爽的东西，直接delete这个文件夹就行了，而且查找起来也比较容易。</span><br></pre></td></tr></table></figure></code></pre><p>cd E:<br>mkdir blog        // 创建名叫blog的文件夹<br>cd E:\blog\        // 进入blog文件夹，如果你已经在E盘<br>                //    则直接cd blog就行了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">然后真正初始化Hexo：</span><br><span class="line"></span><br><span class="line">```hexo init // 创建一个新的Hexo框架</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>此时在你所创建的文件夹中，就会出现一些文件和文件夹，那就说明初始化成功啦！</code></pre><h3 id="3、生成静态网页"><a href="#3、生成静态网页" class="headerlink" title="3、生成静态网页"></a>3、生成静态网页</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate	// 生成静态网页</span><br><span class="line">hexo server		// 在服务器运行，默认为localhost:4000</span><br></pre></td></tr></table></figure>
+
+<pre><code>至此，你的个人博客就已经可以在本地服务器运行啦！但是，搭建博客只是供自己欣赏吗？显然不是，搭建博客的目的是为了让其他人看见我们的一些学习心得，所以做到这一步，工作还远远没有结束，接下来才是重头戏！</code></pre><h2 id="四、将个人博客放在GitHub上，便于其他人访问博客"><a href="#四、将个人博客放在GitHub上，便于其他人访问博客" class="headerlink" title="四、将个人博客放在GitHub上，便于其他人访问博客"></a>四、将个人博客放在GitHub上，便于其他人访问博客</h2><h3 id="1、进入自己的GitHub去创建一个新的repository"><a href="#1、进入自己的GitHub去创建一个新的repository" class="headerlink" title="1、进入自己的GitHub去创建一个新的repository"></a>1、进入自己的GitHub去创建一个新的repository</h3><p><img src="C:%5CUsers%5Chp%5CAppData%5CLocal%5CTemp%5C1563859021323.png" alt="1563859021323"></p>
+<pre><code>这里的Repository name必须按该格式写入：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">创建成功后，将该仓库的https复制一下，其格式应该是这样得：</span><br><span class="line"></span><br><span class="line">```https://github.com/GitHub名称/GitHub名称.github.io.git</span><br></pre></td></tr></table></figure>
+
+
+然后打开blog文件夹，找到**_config.yml**文件，打开它（这里我用sublime text打开），滚动到最后几行并修改如下：
+
+![1563865201240](C:\Users\hp\AppData\Local\Temp\1563865201240.png)
+
+**注意：**这里的冒号：后面都有一个空格！！！
+
+然后在**cmd**中，先键入一下命令:
+
+<figure class="highlight plain"><figcaption><span>install hexo-deployer-git --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">然后输入```hexo generate```，重新生成博客框架。</span><br><span class="line"></span><br><span class="line">最后也是非常多人出错的一步！</span><br><span class="line"></span><br><span class="line">```hexo deploy</span><br></pre></td></tr></table></figure>
+
+
+这里非常多人出错，那是因为没有配置好自己都github的用户名和邮箱。这时，就需要打开Git Bash，然后输入一下命令：
+
+<figure class="highlight plain"><figcaption><span>config --global user.name email "注册github的邮箱"```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```git config --global user.name &quot;你的github用户名&quot;</span><br></pre></td></tr></table></figure>
+
+
+然后返回**cmd**，再次键入<figure class="highlight plain"><figcaption><span>deploy```，就成功啦！</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 四、总结</span><br><span class="line"></span><br><span class="line">	最后感谢一些优秀博客主的资料还有B站UP主的讲解，这篇博客才得以完成，也是我人生的第一篇博客，希望以后有机会，还跟大家一起分享学到的东西，无论是实习、工作或者是码农的一些知识，一定言无不尽！</span><br><span class="line">	</span><br><span class="line">	**ps：**其实hexo的命令都可以简写，如</span><br><span class="line">	</span><br><span class="line">	```hexo new &quot;博文名&quot;```可以写成```hexo n &quot;博文名&quot;</span><br></pre></td></tr></table></figure>
+
+
+```hexo deploy```可以写成```hexo d```
+
+好啦，谢谢大家！</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,46 +254,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/23/环境搭建篇：基于Windows的hexo的搭建及常见问题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/22/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-22T11:18:55.193Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/22/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -256,8 +376,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
