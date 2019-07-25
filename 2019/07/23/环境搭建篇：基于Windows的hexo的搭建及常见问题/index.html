@@ -20,19 +20,14 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd E:\</span><br><span class="line">mkdir blog		// 创建名叫blog的文件夹</span><br><span class="line">cd E:\blog\		// 进入blog文件夹，如果你已经在E盘</span><br><span class="line">			//	则直接cd blog就行了</span><br></pre></td></tr></table></figure>
 
 <p>然后真正初始化Hexo：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init // 创建一个新的Hexo框架</span><br></pre></td></tr></table></figure>
-
+<p><code>hexo init // 创建一个新的Hexo框架</code></p>
 <p>此时在你所创建的文件夹中，就会出现一些文件和文件夹，那就说明初始化成功啦！</p>
-<h3 id="3、生成静态网页"><a href="#3、生成静态网页" class="headerlink" title="3、生成静态网页"></a>3、生成静态网页</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate	// 生成静态网页</span><br><span class="line">hexo server		// 在服务器运行，localhost:4000</span><br></pre></td></tr></table></figure>
-
+<h3 id="3、生成静态网页"><a href="#3、生成静态网页" class="headerlink" title="3、生成静态网页"></a>3、生成静态网页</h3><p><code>hexo generate    // 生成静态网页</code><br><code>hexo server    // 在服务器运行，localhost:4000</code></p>
 <p>至此，你的个人博客就已经可以在本地服务器运行啦！但是，搭建博客只是供自己欣赏吗？显然不是，搭建博客的目的是为了让其他人看见我们的一些学习心得，所以做到这一步，工作还远远没有结束，接下来才是重头戏！</p>
-<h2 id="四、将个人博客放在GitHub上，便于其他人访问博客"><a href="#四、将个人博客放在GitHub上，便于其他人访问博客" class="headerlink" title="四、将个人博客放在GitHub上，便于其他人访问博客"></a>四、将个人博客放在GitHub上，便于其他人访问博客</h2><h3 id="1、进入自己的GitHub去创建一个新的repository"><a href="#1、进入自己的GitHub去创建一个新的repository" class="headerlink" title="1、进入自己的GitHub去创建一个新的repository"></a>1、进入自己的GitHub去创建一个新的repository</h3><p><img src="C:%5CUsers%5Chp%5CAppData%5CLocal%5CTemp%5C1563859021323.png" alt="1563859021323"></p>
-<p>这里的Repository name必须按该格式写入：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub名称.github.io</span><br></pre></td></tr></table></figure>
-
+<h2 id="四、将个人博客放在GitHub上，便于其他人访问博客"><a href="#四、将个人博客放在GitHub上，便于其他人访问博客" class="headerlink" title="四、将个人博客放在GitHub上，便于其他人访问博客"></a>四、将个人博客放在GitHub上，便于其他人访问博客</h2><h3 id="1、进入自己的GitHub去创建一个新的repository"><a href="#1、进入自己的GitHub去创建一个新的repository" class="headerlink" title="1、进入自己的GitHub去创建一个新的repository"></a>1、进入自己的GitHub去创建一个新的repository</h3><p><strong>注意：</strong>这里的Repository name必须按该格式写入：</p>
+<p><code>GitHub名称.github.io</code></p>
 <p>创建成功后，将该仓库的https复制一下，其格式应该是这样得：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/GitHub名称/GitHub名称.github.io.git</span><br></pre></td></tr></table></figure>
-
+<p><code>https://github.com/GitHub名称/GitHub名称.github.io.git</code></p>
 <p>然后打开blog文件夹，找到<strong>_config.yml</strong>文件，打开它（这里我用sublime text打开），滚动到最后几行并修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/PythonChild.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -40,18 +35,17 @@
 <p>然后在<strong>cmd</strong>中，先键入一下命令:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<p>然后输入<figure class="highlight plain"><figcaption><span>generate```，重新生成博客框架。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">最后也是非常多人出错的一步！</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>然后输入<code>hexo generate</code>，重新生成博客框架。</p>
+<p>最后也是非常多人出错的一步！</p>
+<p><code>hexo deploy</code></p>
 <p>这里非常多人出错，那是因为没有配置好自己的github的用户名和邮箱。这时，就需要打开Git Bash，然后输入一下命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name email "注册github的邮箱"</span><br><span class="line">git config --global user.name "你的github用户名"</span><br></pre></td></tr></table></figure>
-
+<p><code>git config --global user.name email &quot;注册github的邮箱&quot;</code><br><code>git config --global user.name &quot;你的github用户名&quot;</code></p>
 <p>然后返回<strong>cmd</strong>，再次键入</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
+<p><code>hexo deploy</code></p>
 <p>就成功啦！</p>
 <h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><p>最后感谢一些优秀博客主的资料还有B站UP主的讲解，这篇博客才得以完成，也是我人生的第一篇博客，希望以后有机会，还跟大家一起分享学到的东西，无论是实习、工作或者是码农的一些知识，一定言无不尽！</p>
 <p><strong>ps：</strong>其实hexo的命令都可以简写，如</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new "博文名" =&gt; hexo n "博文名"</span><br><span class="line">hexo deploy =&gt; hexo d</span><br><span class="line">hexo generate =&gt; hexo g</span><br></pre></td></tr></table></figure>
-
+<p><code>hexo new &quot;博文名&quot; =&gt; hexo n &quot;博文名&quot;</code><br><code>hexo deploy =&gt; hexo d</code><br><code>hexo generate =&gt; hexo g</code></p>
 <p>好啦，谢谢大家！</p>
 </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Youngton</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2019/07/23/环境搭建篇：基于Windows的hexo的搭建及常见问题/">http://yoursite.com/2019/07/23/环境搭建篇：基于Windows的hexo的搭建及常见问题/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo-Windows/">hexo Windows</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/2019/07/22/hello-world/"><span>Hello World</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(/img/background_fs.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2019 By Youngton</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
   $('#nav').addClass('is-mobile')
